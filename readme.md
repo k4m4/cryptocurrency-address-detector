@@ -38,12 +38,13 @@ addressDetect('LQL9pVH1LsMfKwt82Y2wGhNGkrjF8vwUst').then(cryptocurrency => {
 
 Returns the cryptocurrency that an address corresponds to.
 
-#### options.exact
+#### options
 
-Type: `boolean`<br>
-Default: `false` *(Detects any cryptocurrency address in a string)*
+##### timeout
 
-Only match an exact string. Useful with `RegExp#test()` to check what cryptocurrency a string is.
+Type: `number`
+
+Timeout in milliseconds after which a request is considered failed. Default: `5000`.
 
 
 ## Supported Cryptocurrencies
