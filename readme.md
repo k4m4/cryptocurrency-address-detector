@@ -28,7 +28,7 @@ addressDetect({exact: true}).test('LQL9pVH1LsMfKwt82Y2wGhNGkrjF8vwUst');
 //=> 'LTC'
 
 'nodejsrocks rG2ZJRab3EGBmpoxUyiF2guB3GoQTwMGEC unicorn XbtvGzi2JgjYTbTqabUjSREWeovDxznoyh rainbow'.match(addressDetect());
-//=> ['XRP', 'DASH']
+//=> ['rG2ZJRab3EGBmpoxUyiF2guB3GoQTwMGEC', 'XbtvGzi2JgjYTbTqabUjSREWeovDxznoyh']
 ```
 
 
