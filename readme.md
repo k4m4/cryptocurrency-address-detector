@@ -15,20 +15,20 @@
 ```js
 const addressDetect = require('cryptocurrency-address-detector');
 
-addressDetect().test('nodejsrocks 0x281055afc982d96fab65b3a49cac8b878184cb16');
-//=> 'ETH'
+addressDetect('0x281055afc982d96fab65b3a49cac8b878184cb16').then(cryptocurrency => {
+	console.log(cryptocurrency);
+	//=> 'ETH'
+});
 
-addressDetect().test('nodejsrocks 1dice8EMZmqKvrGE4Qc9bUFf9PX3xaYDp');
-//=> 'BTC/BCH'
+addressDetect('1dice8EMZmqKvrGE4Qc9bUFf9PX3xaYDp').then(cryptocurrency => {
+	console.log(cryptocurrency);
+	//=> 'BTC/BCH'
+});
 
-addressDetect({exact: true}).test('nodejsrocks 1dice8EMZmqKvrGE4Qc9bUFf9PX3xaYDp foo');
-//=> 'Crypto-currency could not be detected'
-
-addressDetect({exact: true}).test('LQL9pVH1LsMfKwt82Y2wGhNGkrjF8vwUst');
-//=> 'LTC'
-
-'nodejsrocks rG2ZJRab3EGBmpoxUyiF2guB3GoQTwMGEC unicorn XbtvGzi2JgjYTbTqabUjSREWeovDxznoyh rainbow'.match(addressDetect());
-//=> ['rG2ZJRab3EGBmpoxUyiF2guB3GoQTwMGEC', 'XbtvGzi2JgjYTbTqabUjSREWeovDxznoyh']
+addressDetect('LQL9pVH1LsMfKwt82Y2wGhNGkrjF8vwUst').then(cryptocurrency => {
+	console.log(cryptocurrency);
+	//=> 'LTC'
+});
 ```
 
 
