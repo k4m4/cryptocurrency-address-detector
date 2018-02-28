@@ -29,14 +29,25 @@ addressDetect('LQL9pVH1LsMfKwt82Y2wGhNGkrjF8vwUst').then(cryptocurrency => {
 	console.log(cryptocurrency);
 	//=> 'LTC'
 });
+
+addressDetect('0xsfdlffsjksldfj[IPv6:2001:db8::2]').then(cryptocurrency => {
+	console.log(cryptocurrency);
+	//=> 'Cryptocurrency could not be detected'
+});
 ```
 
 
 ## API
 
-### addressDetect([options])
+### addressDetect(address, [options])
 
 Returns the cryptocurrency that an address corresponds to.
+
+#### address
+
+Type: `string`
+
+Address to check for popular cryptocurrencies.
 
 #### options
 
