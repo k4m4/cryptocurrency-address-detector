@@ -1,6 +1,6 @@
 {
   "name": "cryptocurrency-address-detector",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Detect which cryptocurrency an address corresponds to.",
   "license": "MIT",
   "repository": "k4m4/cryptocurrency-address-detector",
