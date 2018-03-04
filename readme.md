@@ -70,6 +70,11 @@ Timeout in milliseconds after which a request is considered failed. Default: `50
 - [`Dogecoin/DOGE`](https://github.com/k4m4/dogecoin-regex)
 
 
+## Related
+
+- [cryptaddress.now](https://github.com/k4m4/cryptaddress.now) - Minimal service to detect what cryptocurrency an address corresponds to. 
+
+
 ## License
 
 MIT © [Nikolaos Kamarinakis](https://nikolaskama.me)
