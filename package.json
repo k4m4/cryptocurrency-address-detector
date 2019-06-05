@@ -26,17 +26,17 @@
     "index.js"
   ],
   "devDependencies": {
-    "ava": "^1.2.1"
+    "ava": "^1.4.1"
   },
   "dependencies": {
     "arrify": "^1.0.1",
     "bitcoin-regex": "^2.0.0",
-    "dash-regex": "^1.0.5",
-    "dogecoin-regex": "^1.0.4",
-    "ethereum-regex": "^1.1.5",
-    "litecoin-regex": "^1.0.4",
-    "monero-regex": "^1.0.3",
-    "neo-regex": "^1.0.2",
+    "dash-regex": "^1.0.6",
+    "dogecoin-regex": "^1.0.5",
+    "ethereum-regex": "^1.1.6",
+    "litecoin-regex": "^1.0.5",
+    "monero-regex": "^1.0.4",
+    "neo-regex": "^1.0.3",
     "p-any": "^1.1.0",
     "p-timeout": "^2.0.1",
     "pify": "^3.0.0",
