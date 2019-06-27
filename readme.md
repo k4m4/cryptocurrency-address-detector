@@ -60,7 +60,8 @@ Timeout in milliseconds after which a request is considered failed. Default: `50
 
 ## Supported Cryptocurrencies
 
-- [`Bitcoin/BTC`](https://github.com/kevva/bitcoin-regex) & [`Bitcoin Cash/BCH`](https://github.com/k4m4/bitcoincash-regex)
+- [`Bitcoin/BTC`](https://github.com/kevva/bitcoin-regex)
+- [`Bitcoin Cash/BCH`](https://github.com/k4m4/bitcoincash-regex)
 - [`Ethereum/ETH`](https://github.com/k4m4/ethereum-regex)
 - [`Litecoin/LTC`](https://github.com/k4m4/litecoin-regex)
 - [`Monero/XMR`](https://github.com/k4m4/monero-regex)

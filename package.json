@@ -31,6 +31,7 @@
   "dependencies": {
     "arrify": "^1.0.1",
     "bitcoin-regex": "^2.0.0",
+    "bitcoincash-regex": "^1.1.0",
     "dash-regex": "^1.0.6",
     "dogecoin-regex": "^1.0.5",
     "ethereum-regex": "^1.1.6",

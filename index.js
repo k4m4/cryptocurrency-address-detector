@@ -7,6 +7,7 @@ const bitcoinRegex     = require('bitcoin-regex');
 const ethereumRegex    = require('ethereum-regex');
 const litecoinRegex    = require('litecoin-regex');
 const dogecoinRegex    = require('dogecoin-regex');
+const bitcoincashRegex = require('bitcoincash-regex');
 const dashRegex        = require('dash-regex');
 const moneroRegex      = require('monero-regex');
 const rippleRegex      = require('ripple-regex');
@@ -20,6 +21,7 @@ function detectCrypto(address) {
 	else if (dashRegex({exact: true}).test(address)) return 'DASH';
 	else if (moneroRegex({exact: true}).test(address)) return 'XMR';
 	else if (rippleRegex({exact: true}).test(address)) return 'XRP';
+	else if (bitcoincashRegex.format('cashaddr', {exact: true}).test(address)) return 'BCH';
 	else if (neoRegex({exact: true}).test(address)) return 'NEO';
 	else return 'Cryptocurrency could not be detected'
 }
