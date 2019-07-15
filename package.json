@@ -31,16 +31,16 @@
   "dependencies": {
     "arrify": "^1.0.1",
     "bitcoin-regex": "^2.0.0",
-    "bitcoincash-regex": "^1.1.0",
-    "dash-regex": "^1.0.6",
-    "dogecoin-regex": "^1.0.5",
-    "ethereum-regex": "^1.1.6",
-    "litecoin-regex": "^1.0.5",
-    "monero-regex": "^1.0.4",
-    "neo-regex": "^1.0.3",
+    "bitcoincash-regex": "^1.1.3",
+    "dash-regex": "^1.0.8",
+    "dogecoin-regex": "^1.0.7",
+    "ethereum-regex": "^1.1.8",
+    "litecoin-regex": "^1.0.6",
+    "monero-regex": "^1.0.6",
+    "neo-regex": "^1.0.5",
     "p-any": "^1.1.0",
     "p-timeout": "^2.0.1",
     "pify": "^3.0.0",
-    "ripple-regex": "^1.1.4"
+    "ripple-regex": "^1.1.6"
   }
 }
