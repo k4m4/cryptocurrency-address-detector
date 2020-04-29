@@ -12,6 +12,7 @@ const dashRegex        = require('dash-regex');
 const moneroRegex      = require('monero-regex');
 const rippleRegex      = require('ripple-regex');
 const neoRegex         = require('neo-regex');
+const TronWeb          = require('tronweb');
 
 function detectCrypto(address) {
 	if (bitcoinRegex({exact: true}).test(address)) return 'BTC/BCH';
@@ -23,6 +24,7 @@ function detectCrypto(address) {
 	else if (rippleRegex({exact: true}).test(address)) return 'XRP';
 	else if (bitcoincashRegex.format('cashaddr', {exact: true}).test(address)) return 'BCH';
 	else if (neoRegex({exact: true}).test(address)) return 'NEO';
+	else if (TronWeb.utils.crypto.isAddressValid(address)) return 'TRON';
 	else return 'Cryptocurrency could not be detected'
 }
 

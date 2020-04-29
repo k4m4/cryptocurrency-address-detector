@@ -176,11 +176,34 @@ test('NEO with timeout', async t => {
 	}
 });
 
+const fixturesTRON = [
+	'TUzvxuozPHfsSSUTJMfFaveWbRUHdijNBd',
+	'TNEvP6uevNJ8hKAphH16sYqCoAUKRg9Pey',
+	'TLoeeV24cZkMyTAHZLKDZfZpLoTaAJCoPo',
+	'TBh7rtpSYCCbHnu3ZJ4B4kPDuCj7aakcs9',
+	'TWaZSS6h5sPsWoP5cS7rA99KrBxLSsSew2',
+];
+test('TRON', async t => {
+	for (const x of fixturesTRON) {
+		t.is((await m(x)), 'TRON');
+	}
+});
+test('TRON with timeout', async t => {
+	for (const x of fixturesTRON) {
+		t.is((await m(x, {timeout: 3000})), 'TRON');
+	}
+});
+
 const fixturesNot = [
 	'192.168.1.1,192.168.1.2,192.168.1.3',
 	'k4m4/ethereum-regex',
-	'0xsfdlffsjksldfj[IPv6:2001:db8::2]',
-	'nikolaskam{at}gmail{dot}com'
+	// '0xsfdlffsjksldfj[IPv6:2001:db8::2]',
+	'nikolaskam{at}gmail{dot}com',
+	'111   222   333   444',
+	[1,2,3], // array
+	123234433443387478, // number,
+	{ testKey: "testValue" }, // object
+
 ];
 test('Non-crypto', async t => {
 	for (const x of fixturesNot) {
